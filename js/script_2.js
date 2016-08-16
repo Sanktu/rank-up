@@ -244,15 +244,23 @@ d = [["Departure Tower","Tower Entrance",3,48,90,23,1,,,,,],
     ["Alt. Talos's Abyss","Annihilator of the Void 2",30,13000,16000,483,1917,"Alt. Tier","Tower","6","0",""],
     ["Alt. Talos's Abyss","Dark Liege",30,18000,23500,691,1918,"Alt. Tier","Tower","6","0",""],
     ["Machine Hera Descended!","Mechanical Queen-Annihilation",99,138867,138867,1403,1826,"God Tier","Tower","6","0",""],
-    ["Machine Zeus Descended!-No RCV","Mechanical War King-Annihilation",99,114497,114497,1157,1973,"God Tier","Tower","6","0",""]
+    ["Machine Zeus Descended!-No RCV","Mechanical War King-Annihilation",99,114497,114497,1157,1973,"God Tier","Tower","6","0",""],
+    ["Myr Descended!","Time Boundaries Dragon - Legend Plus",50,25456,33658,591,2149,"Rouge Tier","Tower","6","0",""],
+    ["Myr Descended!","Time Boundaries Dragon - Mythical Plus",50,34119,45111,792,2150,"Rouge Tier","Tower","6","0",""],
+    ["Gainaut Descended!","Stubborn Dragon King - Legend Plus",50,40442,49569,900,1974,"Rouge Tier","Tower","6","0",""],
+    ["Gainaut Descended!","Stubborn Dragon King - Mythical Plus",50,51523,63469,1149,1975,"Rouge Tier","Tower","6","0",""],
+    ["Linthia Descended!","Dragon Queen of the Wind - Legend Plus",50,46054,46054,921,1827,"Rouge Tier","Tower","6","0",""],
+    ["Linthia Descended!","Dragon Queen of the Wind - Mythical Plus",50,57587,57587,1151,1828,"Rouge Tier","Tower","6","0",""],
+    ["Volsung Descended!","Sea Dragon King - Legend Plus",50,37967,49813,877,1837,"Rouge Tier","Tower","6","0",""],
+    ["Volsung Descended!","Sea Dragon King - Mythical Plus",50,47786,58375,877,1838,"Rouge Tier","Tower","6","0",""],
+    ["Scarlet Descended!","Hell Demon - Legend Plus",50,37228,42032,792,1835,"Rouge Tier","Tower","6","0",""],
+    ["Scarlet Descended!","Hell Demon - Mythical Plus",50,47768,58353,792,1836,"Rouge Tier","Tower","6","0",""],
+    ["Nordis Descended!","Knight Dragon King - Legend Plus",50,38925,44453,833,1833,"Rouge Tier","Tower","6","0",""],
+    ["Nordis Descended!","Knight Dragon King - Mythical Plus",50,46626,60762,1073,1834,"Rouge Tier","Tower","6","0",""],
+    ["Zaerog∞ Descended","Phantom Dragon King - Legend Plus",50,45573,50896,964,1831,"Rouge Tier","Tower","6","0",""],
+    ["Zaerog∞ Descended","Phantom Dragon King - Mythical Plus",50,60449,60889,1213,1832,"Rouge Tier","Tower","6","0",""],
     ];
 
-var nowM = moment();
-nowM.tz("America/Los_Angeles");
-if (nowM.day() == 1) {
-    d.push(["Monday Dungeon","Iron Strength Plaza - Expert",25,19000,21000,800,1649,"Special Dungeon","Tower","6","0",""]);
-    d.push(["Monday Dungeon","Iron Strength Plaza - Legend",50,60000,63000,1230,1650,"Special Dungeon","Tower","6","0",""]);
-}
 for (i in d) { d[i].unlocked = true; d[i][12] = parseInt(i); }
 var intRegex = /^\d+$/;
 function numberWithCommas(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
@@ -299,7 +307,7 @@ function is_bonus(dd, type, timestamp) {
 
 function is_coop(d) {
     if (coopMode) {
-        if(d[7] === "Alt. Tier" || d[7] === "God Tier" || d[7] === "Special Dungeon")
+        if(d[7] === "Alt. Tier" || d[7] === "God Tier")
             return true;
         return false;
     }
