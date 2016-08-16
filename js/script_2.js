@@ -245,7 +245,8 @@ d = [["Departure Tower","Tower Entrance",3,48,90,23,1,,,,,],
     ["Alt. Talos's Abyss","Dark Liege",30,18000,23500,691,1918,"Alt. Tier","Tower","6","0",""],
     ["Machine Hera Descended!","Mechanical Queen-Annihilation",99,138867,138867,1403,1826,"God Tier","Tower","6","0",""],
     ["Machine Zeus Descended!-No RCV","Mechanical War King-Annihilation",99,114497,114497,1157,1973,"God Tier","Tower","6","0",""]
-    ];
+    ],
+    ["Myr Descended!","Time Boundaries Dragon - Legend Plus",50,33658,33658,674,2149,"God Tier","Tower","6","0",""];
 
 for (i in d) { d[i].unlocked = true; d[i][12] = parseInt(i); }
 var intRegex = /^\d+$/;
