@@ -245,22 +245,22 @@ d = [["Departure Tower","Tower Entrance",3,48,90,23,1,,,,,],
     ["Alt. Talos's Abyss","Dark Liege",30,18000,23500,691,1918,"Alt. Tier","Tower","6","0",""],
     ["Machine Hera Descended!","Mechanical Queen-Annihilation",99,138867,138867,1403,1826,"Mecha Tier","Tower","6","0",""],
     ["Machine Zeus Descended!-No RCV","Mechanical War King-Annihilation",99,114497,114497,1157,1973,"Mecha Tier","Tower","6","0",""],
-    ["Myr Descended!","Time Boundaries Dragon - Legend Plus",50,25456,33658,591,2149,"Rouge Tier","Tower","6","0",""],
-    ["Myr Descended!","Time Boundaries Dragon - Mythical Plus",50,34119,45111,792,2150,"Rouge Tier","Tower","6","0",""],
-    ["Gainaut Descended!","Stubborn Dragon King - Legend Plus",50,40442,49569,900,1974,"Rouge Tier","Tower","6","0",""],
-    ["Gainaut Descended!","Stubborn Dragon King - Mythical Plus",50,51523,63469,1149,1975,"Rouge Tier","Tower","6","0",""],
-    ["Linthia Descended!","Dragon Queen of the Wind - Legend Plus",50,46054,46054,921,1827,"Rouge Tier","Tower","6","0",""],
-    ["Linthia Descended!","Dragon Queen of the Wind - Mythical Plus",50,57587,57587,1151,1828,"Rouge Tier","Tower","6","0",""],
-    ["Volsung Descended!","Sea Dragon King - Legend Plus",50,37967,49813,877,1837,"Rouge Tier","Tower","6","0",""],
-    ["Volsung Descended!","Sea Dragon King - Mythical Plus",50,47786,58375,877,1838,"Rouge Tier","Tower","6","0",""],
-    ["Scarlet Descended!","Hell Demon - Legend Plus",50,37228,42032,792,1835,"Rouge Tier","Tower","6","0",""],
-    ["Scarlet Descended!","Hell Demon - Mythical Plus",50,47768,58353,792,1836,"Rouge Tier","Tower","6","0",""],
-    ["Nordis Descended!","Knight Dragon King - Legend Plus",50,38925,44453,833,1833,"Rouge Tier","Tower","6","0",""],
-    ["Nordis Descended!","Knight Dragon King - Mythical Plus",50,46626,60762,1073,1834,"Rouge Tier","Tower","6","0",""],
-    ["Zaerog∞ Descended","Phantom Dragon King - Legend Plus",50,45573,50896,964,1831,"Rouge Tier","Tower","6","0",""],
-    ["Zaerog∞ Descended","Phantom Dragon King - Mythical Plus",50,60449,60889,1213,1832,"Rouge Tier","Tower","6","0",""],
-    ["Special Descended Rush!","Dragon's Evil Domain - Mythical Plus",99,88468,88468,893,2153,"Rouge Tier","Tower","6","0",""],
-    ["Special Descended Rush!","Dragon's Evil Domain - Annihilation",99,121030,121030,1222,2154,"Rouge Tier","Tower","6","0",""],
+    ["Myr Descended!","Time Boundaries Dragon - Legend Plus",50,25456,33658,591,2149,"Rogue Tier","Tower","6","0",""],
+    ["Myr Descended!","Time Boundaries Dragon - Mythical Plus",50,34119,45111,792,2150,"Rogue Tier","Tower","6","0",""],
+    ["Gainaut Descended!","Stubborn Dragon King - Legend Plus",50,40442,49569,900,1974,"Rogue Tier","Tower","6","0",""],
+    ["Gainaut Descended!","Stubborn Dragon King - Mythical Plus",50,51523,63469,1149,1975,"Rogue Tier","Tower","6","0",""],
+    ["Linthia Descended!","Dragon Queen of the Wind - Legend Plus",50,46054,46054,921,1827,"Rogue Tier","Tower","6","0",""],
+    ["Linthia Descended!","Dragon Queen of the Wind - Mythical Plus",50,57587,57587,1151,1828,"Rogue Tier","Tower","6","0",""],
+    ["Volsung Descended!","Sea Dragon King - Legend Plus",50,37967,49813,877,1837,"Rogue Tier","Tower","6","0",""],
+    ["Volsung Descended!","Sea Dragon King - Mythical Plus",50,47786,58375,877,1838,"Rogue Tier","Tower","6","0",""],
+    ["Scarlet Descended!","Hell Demon - Legend Plus",50,37228,42032,792,1835,"Rogue Tier","Tower","6","0",""],
+    ["Scarlet Descended!","Hell Demon - Mythical Plus",50,47768,58353,792,1836,"Rogue Tier","Tower","6","0",""],
+    ["Nordis Descended!","Knight Dragon King - Legend Plus",50,38925,44453,833,1833,"Rogue Tier","Tower","6","0",""],
+    ["Nordis Descended!","Knight Dragon King - Mythical Plus",50,46626,60762,1073,1834,"Rogue Tier","Tower","6","0",""],
+    ["Zaerog∞ Descended","Phantom Dragon King - Legend Plus",50,45573,50896,964,1831,"Rogue Tier","Tower","6","0",""],
+    ["Zaerog∞ Descended","Phantom Dragon King - Mythical Plus",50,60449,60889,1213,1832,"Rogue Tier","Tower","6","0",""],
+    ["Special Descended Rush!","Dragon's Evil Domain - Mythical Plus",99,88468,88468,893,2153,"Rogue Tier","Tower","6","0",""],
+    ["Special Descended Rush!","Dragon's Evil Domain - Annihilation",99,121030,121030,1222,2154,"Rogue Tier","Tower","6","0",""],
     ["Ultimate Yamato Rush!","Land of the Rising Sun - Legend Plus",66,40293,46842,660,1847,"Rush (b) Tier","Tower","6","0",""],
     ["Ultimate Yamato Rush!","Land of the Rising Sun - Mythical Plus",99,59830,73323,672,1848,"Rush (b) Tier","Tower","6","0",""],
     ["Ultimate Dragon Rush!","True Dragon Realm - Legend Plus",66,40672,49543,683,1845,"Rush (b) Tier","Tower","6","0",""],
@@ -322,7 +322,7 @@ function is_bonus(dd, type, timestamp) {
 
 function is_coop(d) {
     if (coopMode) {
-        if(d[7] === "Alt. Tier" || d[7] === "Mecha Tier" || d[7] === "God Tier" || d[7] === "Rouge Tier" || d[7] === "Rush (b) Tier" || d[7] === "Monday Tier")
+        if(d[7] === "Alt. Tier" || d[7] === "Mecha Tier" || d[7] === "God Tier" || d[7] === "Rogue Tier" || d[7] === "Rush (b) Tier" || d[7] === "Monday Tier")
             return true;
         return false;
     }
