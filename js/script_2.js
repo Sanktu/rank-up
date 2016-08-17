@@ -322,7 +322,7 @@ function is_bonus(dd, type, timestamp) {
 
 function is_coop(d) {
     if (coopMode) {
-        if(d[7] === "Alt. Tier" || d[7] === "God Tier")
+        if(d[7] === "Alt. Tier" || d[7] === "Mecha Tier" || d[7] === "God Tier" || d[7] === "Rouge Tier" || d[7] === "Rush (b) Tier" || d[7] === "Monday Tier")
             return true;
         return false;
     }
